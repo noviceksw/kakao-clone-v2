@@ -11,7 +11,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <title>Chat | kakao-v2</title>
+    <title>Frineds | kakao-v2</title>
   </head>
   <body>
     <div class="status-bar">
@@ -28,62 +28,72 @@
     </div>
     <header class="header">
       <div class="header__header-column">
-        <a href="index.html" class="header__back-btn">
-          <i class="fas fa-arrow-left "></i>
-        </a>
-        <h1 class="header__title">Best Friend</h1>
+        <h1 class="header__title">Friends</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
+
         <span class="header__icon">
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-cog"></i>
         </span>
       </div>
     </header>
-    <main class="chat">
-      <ul class="chat__messages">
-        <span class="chat__timestamp">Fridaym January 11,</span>
-        <li class="incoming-messages message">
-          <img src="images/avatar.jpg" class="g-avatar message-avatar" />
-          <div class="message__content">
-            <span class="message__author">Best friend</span>
-            <div class="message__buble">
-              Congrats I love you!
+    <main class="chats">
+      <ul class="chats__list">
+        <li class="chats__chat chat">
+          <a href="chat.html">
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img
+                  src="images/avatar.jpg"
+                  alt=""
+                  class="m-avatar friend__avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Lynn
+                  </span>
+                  <span class="friend__bottom-text">
+                    Going home!
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  March 8
+                </span>
+              </div>
             </div>
-          </div>
-          <span class="message__timestamp">15:19</span>
-        </li>
-        <li class="incoming-messages message">
-          <span class="message__timestamp">15:22</span>
-          <div class="message__content">
-            <div class="message__buble">
-              Thank you see you soon!
-            </div>
-          </div>
+          </a>
         </li>
       </ul>
     </main>
-    <div class="chat__write">
-      <div class="chat__write-column">
-        <i class="far fa-plus-square"></i>
-      </div>
-      <div class="chat__write-column">
-        <input
-          type="text"
-          placeholder="Send message"
-          class="chat__write-input"
-        />
-      </div>
-      <div class="chat__write-column">
-        <span class="chat__write-icon">
-          <i class="far fa-smile-wink"></i>
-        </span>
-        <span class="chat__write-icon">
-          <i class="fas fa-microphone"></i>
-        </span>
-      </div>
-    </div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
+            <i class="far fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>
